@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Formulario</title>
+</head>
+
+<body class="body-formulario">
+  <div class="contenedor">
+    <form class="formularioForm" action="" method="post">
+      <div class="nombre-completo">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre-completo" placeholder="Ingrese su nombre">
+      </div>
+      <div class="correo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="correo" placeholder="Ingrese su correo electronico">
+      </div>
+      <div class="genero">
+        <p class="titulo-genero">Genero:</p>
+        <div class="opciones-genero">
+          <div>
+            <input type="radio" id="masculino" name="Genero" value="Masculino">
+            <label for="masculino" class="masculino">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" id="femenino" name="Genero" value="Femenino">
+            <label for="femenino" class="femenino">Femenino</label>
+          </div>
+          <div>
+            <input type="radio" id="otro" name="Genero" value="Otro">
+            <label for="otro" class="otro">Otro</label>
+          </div>
+        </div>
+      </div>
+      <div class="div-direccion">
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+      </div>
+      <div class=" div-localidad">
+        <div class="localidad-1">
+          <label for="localidad">Localidad</label>
+          <input type="text" name="localidad" id="localidad" placeholder="Ingrese su localidad">
+        </div>
+        <div class="div-codigo-postal">
+          <label for="codigo-postal">Codigo Postal</label>
+          <input type="text" name="codigo-postal" id="codigo-postal" placeholder="Ingrese su codigo postal">
+        </div>
+      </div>
+      <div class="password">
+        <div class="contraseña">
+          <label for="contraseña">Contraseña</label>
+          <input type="text" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="confirmar">
+          <label for="confirmar-contraseña">Confirme Contraseña</label>
+          <input type="text" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Confirme su contraseña">
+        </div>
+      </div>
+      <div class="botones">
+        <button type="submit" class="enviar">Enviar</button>
+        <a href="index.html" class="cancelar" id="cerrarFormulario">Cancelar</a>
+      </div>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

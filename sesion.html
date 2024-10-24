@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="body-sesion">
+    <div id="contenedor-sesion">
+        <form id="iniciodesesion" action="" method="post">
+            <h1 class="h1-sesion">Inicia sesión</h1>
+            <p class="parrafo-sesion">Ingresa la direccion de correo electronico y la contraseña de tu cuenta</p>
+            <div class="sesion">
+                <label for="correo-electrónico"> Correo electronico</label>
+                <input type="text" name="correo" id="correo-electronico" placeholder="Ingresa tu correo electronico">
+                <label for="contraseña-sesion">Contraseña</label>
+                <input type="password" name="inicio-de-sesion" id="contraseña-sesion"
+                    placeholder="Ingresa tu contraseña">
+            </div>
+            <h4 id="recuperarContraseña">¿Olvidaste la contraseña?</h4>
+            <div class="boton-input">
+                <button class="boton-sesion">Inicia sesión</button>
+                <input class="boton-sesion" type=button value=Atrás onclick="history.go(-1)">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
