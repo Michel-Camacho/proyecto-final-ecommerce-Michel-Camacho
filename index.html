@@ -7,25 +7,44 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
   <script src="fontawesome-free/js/all.min.js"></script>
-  <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="imagenes/favicon-32x32.webp" type="image/x-icon">
   <title>Proyecto Final</title>
 </head>
 
 <body>
   <header>
     <nav class="navBar">
-      <li><img src="imagenes/MSC.png" alt="" /></li>
-      <li><a href="#ofertas">Promociones y Ofertas</a></li>
-      <li><a href="#cupones">Cupones</a></li>
-      <li><a href="#categorias">Categorias</a></li>
-      <li><a href="#supermercado">Supermercado</a></li>
-      <li><a class="inicio-de-sesion nav-buttons"> Inicia sesión </a></li>
-      <li><a class="ir-a-formulario nav-buttons">Registrate</a></li>
-      <li><a href="">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+      <a class="menuButton"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+          fill="white">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg></a>
+      <img class="hideOnMobile" src="imagenes/MSC.webp" alt="" />
+      <a class="hideOnMobile" href="#ofertas">Promociones Y Ofertas</a>
+      <a class="hideOnMobile" href="#contacto">Contacto</a>
+      <a class="hideOnMobile" href="#categorias">Categorias</a>
+      <a class="hideOnMobile" href="#reseñas">Reseñas</a>
+      <a class="hideOnMobile  inicio-de-sesion">Inicia sesión</a>
+      <a class="hideOnMobile  ir-a-formulario">Registrate</a>
+      <a class="hideOnMobile" href="">Mis compras<i class="fas fa-shopping-cart"></i></a>
+
+      <ul class="sidebar">
+        <li class="closeMenu"><a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+              fill="white">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+        <li><a href="#ofertas">Promociones y Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a class="inicio-de-sesion nav-buttons"> Inicia sesión </a></li>
+        <li><a class="ir-a-formulario nav-buttons">Registrate</a></li>
+        <li><a href="">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
     </nav>
   </header>
-  <main>
 
+  <main>
     <section id="ofertas">
       <h2>Promociones y Ofertas</h2>
       <div class="contenedorCarrusel">
@@ -41,59 +60,172 @@
       <button class="btn-izquierda"><i class="fa-solid fa-chevron-left"></i></button>
       <button class="btn-derecha"><i class="fa-solid fa-chevron-right"></i></button>
     </section>
-    <section id="cupones">
+
+    <!-- <section id="cupones">
       <h2>Cupones</h2>
-    </section>
+    </section> -->
+
     <section id="categorias">
       <h2>Categorias</h2>
       <article>
         <img id="imagenesOfertas" src="Imagenes/arreglo-coleccion-estacionaria-m.avif" alt="">
         <h3>tecnologia</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>boton</button>
+        <button>Comprar</button>
       </article>
       <article>
-        <img id="imagenesOfertas" src="Imagenes/utensilios-cocina-profesional.jpg" alt="">
+        <img id="imagenesOfertas" src="Imagenes/utensilios-cocina-profesional.avif" alt="">
         <h3>Cocina</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>boton</button>
+        <button>Comprar</button>
       </article>
       <article>
         <img id="imagenesOfertas" src="Imagenes/herramientas.avif" alt="">
         <h3>Herramientas</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>boton</button>
+        <button>Comprar</button>
       </article>
       <article>
-        <img id="imagenesOfertas" src="Imagenes/electrodomesticos.jpg" alt="">
+        <img id="imagenesOfertas" src="Imagenes/electrodomesticos.avif" alt="">
         <h3>Electrodomesticos</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>boton</button>
+        <button>Comprar</button>
       </article>
       <article>
-        <img id="imagenesOfertas" src="Imagenes/hogar-muebles-curvas_104.webp" alt="">
+        <img id="imagenesOfertas" src="Imagenes/hogar-muebles-curvas_104.avif" alt="">
         <h3>Muebles y hogar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>boton</button>
+        <button>Comprar</button>
       </article>
     </section>
-    <section id="supermercado">
-      <h3>Supermercado</h3>
+
+    <section id="reseñas">
+      <h4>Reseñas</h4>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil1.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil2.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil3.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil4.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil5.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
+      <article class="reseñas-article">
+        <img id="reseña-img" src="Imagenes/perfil6.webp" alt="">
+        <div class="estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati? Corporis deserunt quibusdam ex
+            beatae, quia, quis numquam repudiandae dolor molestiae veniam iure itaque modi ullam, officiis corrupti
+            ducimus
+            obcaecati?
+          </p>
+        </div>
+      </article>
     </section>
   </main>
-  <footer>
-    <form action="https://formspree.io/f/xanynvqv" method="post">
-      <label for="nombreCompleto" id="footer-label">Nombre Completo</label>
-      <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Ingresa tu nombre completo">
-      <label for="email" id="footer-label">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
-      <label for="mensaje" id="footer-label">Tu mensaje</label>
-      <textarea name="message" id="mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <hr>
-    <h4>&copy; Todos los derechos reservados 2024</h4>
+
+  <footer id="contacto">
+    <div class="footer-form">
+      <h4>Contactenos</h4>
+      <form action="https://formspree.io/f/xanynvqv" method="post">
+        <label for="nombreCompleto" id="footer-label">Nombre Completo</label>
+        <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Ingresa tu nombre completo">
+        <label for="email" id="footer-label">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
+        <label for="mensaje" id="footer-label">Tu mensaje</label>
+        <textarea name="message" id="mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="youtube-video">
+      <h4>Video</h4>
+      <iframe class="video" src="https://www.youtube.com/embed/uuGqMYkXqPU?si=E_97yeyLyDpGzF38"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <button id="scrollBtn">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </button>
   </footer>
+
+  <h4 class="footerh4">&copy; Todos los derechos reservados 2024</h4>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/541387a2d4.js" crossorigin="anonymous"></script>
 </body>
