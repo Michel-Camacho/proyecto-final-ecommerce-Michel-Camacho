@@ -638,6 +638,13 @@ article > p {
   margin-top: 1rem;
 }
 
+@media (width < 800px) {
+  #marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 #marcas > h2 {
   display: grid;
   grid-column: 1 / -1;
@@ -672,6 +679,7 @@ article > p {
 
 .seccionMarcas > img:hover {
   scale: 1.1;
+  opacity: 0.7;
 }
 /* --RESEÑAS--*/
 #reseñas {
