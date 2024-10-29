@@ -513,16 +513,6 @@ section > h2 {
   left: 0;
 }
 
-/* --CUPONES-- */
-#cupones {
-  scroll-margin-top: 85px;
-  width: 90%;
-  height: auto;
-  color: #fff;
-  text-align: center;
-  background-color: #9d331f;
-  margin: auto;
-}
 /* --CATEGORIAS-- */
 #categorias {
   scroll-margin-top: 85px;
@@ -637,6 +627,52 @@ article > p {
   cursor: pointer;
 }
 
+/* --MARCAS-- */
+#marcas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  scroll-margin-top: 85px;
+  width: 90%;
+  background-color: #07c2e8;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#marcas > h2 {
+  display: grid;
+  grid-column: 1 / -1;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: clamp(1rem, 2vw, 1rem);
+  color: #083244;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 1rem;
+  background-color: #ecfeff;
+}
+
+.seccionMarcas {
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+.seccionMarcas > img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #083244;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.seccionMarcas > img:hover {
+  scale: 1.1;
+}
 /* --RESEÑAS--*/
 #reseñas {
   display: grid;
