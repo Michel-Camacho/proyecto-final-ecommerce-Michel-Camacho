@@ -311,7 +311,7 @@ nav {
   position: fixed;
   height: fit-content;
   top: 0;
-  width: 100%;
+  width: 100dvw;
   height: 85px;
   text-align: center;
   background: rgb(82, 82, 201);
@@ -321,6 +321,20 @@ nav {
     rgba(7, 194, 232, 1) 100%
   );
   z-index: 2;
+}
+
+@media (width < 800px) {
+  nav {
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1000;
+    padding: 0.9rem;
+  }
+
+  body {
+    margin-top: 0;
+  }
 }
 
 li {
@@ -369,32 +383,33 @@ a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(30, 0, 0, 0.5);
+  background-color: rgba(16, 130, 166, 0.6);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
 }
 
 .sidebar li {
   display: flex;
   border: 1px solid #fff;
+  border-radius: 10px;
   margin: 1rem;
 }
 
 .sidebar a {
   width: 100%;
   margin: 5px;
+  color: #fff;
 }
 
 .menuButton {
   display: none;
-  width: fit-content;
 }
 
 @media (max-width: 800px) {
@@ -402,8 +417,11 @@ a:hover {
   nav ul {
     display: none;
   }
+
   .menuButton {
     display: block;
+    position: static;
+    top: 0;
   }
 
   .sidebar.active {
@@ -429,6 +447,16 @@ a:hover {
   background-color: #07c2e8;
   margin: auto;
   padding: 0.5rem;
+}
+
+@media (width < 800px) {
+  #ofertas {
+    scroll-margin-top: 0;
+  }
+
+  .carrusel {
+    padding-bottom: 0;
+  }
 }
 
 section > h2 {
@@ -530,7 +558,18 @@ section > h2 {
   width: 90%;
   margin: auto;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+@media (width < 800px) {
+  #categorias {
+    scroll-margin-top: 0;
+    width: 100dvw;
+    margin: 0;
+    padding-top: 0.5;
+    padding-bottom: 0;
+    padding-inline: 0;
+  }
 }
 
 #categorias > article {
@@ -543,18 +582,6 @@ section > h2 {
   width: 70%;
   height: fit-content;
   background-color: #ecfeff;
-  animation-name: categorias;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-}
-
-@keyframes categorias {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100);
-  }
 }
 
 #categorias > article:hover {
@@ -621,7 +648,7 @@ article > p {
   justify-content: center;
   margin: auto;
   border: 1px solid black;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 15%;
   height: 60%;
   width: 80%;
   cursor: pointer;
@@ -635,13 +662,16 @@ article > p {
   width: 90%;
   background-color: #07c2e8;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 @media (width < 800px) {
   #marcas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100dvw;
+    margin: 0;
+    scroll-margin-top: 0;
   }
 }
 
@@ -661,7 +691,6 @@ article > p {
 }
 
 .seccionMarcas {
-  border: 1px solid;
   border-radius: 20px;
   text-align: center;
   margin: auto;
@@ -690,16 +719,17 @@ article > p {
   margin: auto;
   margin-top: 1rem;
   background-color: #0e7190;
-  padding: 1rem;
+  padding: 0.5rem;
   scroll-margin-top: 85px;
 }
 
-@media (width < 600px) {
+@media (width < 800px) {
   #reseñas {
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    scroll-margin-top: 0;
+    width: 100dvw;
   }
 }
 
@@ -785,7 +815,7 @@ footer {
   height: 100%;
   background-color: #083244;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: var(--fuente-titulos);
   font-weight: 800;
   font-optical-sizing: auto;
@@ -797,6 +827,8 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    scroll-margin-top: 0;
   }
 }
 
@@ -873,6 +905,8 @@ form > button {
   font-optical-sizing: auto;
   font-style: normal;
   text-wrap: balance;
+  background-color: #07c2e8;
+  border: 2px solid #083244;
 }
 
 .youtube-video > h4,
@@ -900,8 +934,6 @@ form > button {
 /* --BOTON SCROLL-- */
 
 #scrollBtn {
-  float: right;
-  margin-left: 0;
   cursor: pointer;
   border: none;
 }
