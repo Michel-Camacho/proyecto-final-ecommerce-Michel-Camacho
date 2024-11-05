@@ -309,10 +309,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  height: fit-content;
   top: 0;
   width: 100dvw;
-  height: 85px;
   text-align: center;
   background: rgb(82, 82, 201);
   background: linear-gradient(
@@ -326,7 +324,6 @@ nav {
 @media (width < 800px) {
   nav {
     position: fixed;
-    height: fit-content;
     width: fit-content;
     padding: 0.9rem;
   }
@@ -392,6 +389,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding-inline: 1rem;
+  transition: 1s ease-in-out;
 }
 
 .sidebar li {
@@ -413,7 +411,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (width < 800px) {
   .hideOnMobile,
   nav ul {
     display: none;
@@ -430,9 +428,9 @@ a:hover {
   }
 }
 
-@media (max-width: 400px) {
+@media (width > 800px) {
   .sidebar {
-    width: 100%;
+    display: none;
   }
 }
 
