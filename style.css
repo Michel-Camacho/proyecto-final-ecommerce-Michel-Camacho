@@ -20,8 +20,9 @@ html {
 }
 
 body {
+  width: 100%;
   margin-top: 85px;
-  background-color: #ecfeff;
+  background-color: #083244;
 }
 
 .body-formulario {
@@ -389,7 +390,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding-inline: 1rem;
-  transition: 1s ease-in-out;
 }
 
 .sidebar li {
@@ -444,7 +444,8 @@ a:hover {
   text-align: center;
   background-color: #07c2e8;
   margin: auto;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
 }
 
 @media (width < 800px) {
@@ -546,7 +547,7 @@ section > h2 {
   height: fit-content;
   color: #fff;
   text-align: center;
-  background-color: #67e5f9;
+  background-color: #0e7190;
 }
 
 #categorias {
@@ -665,7 +666,7 @@ article > p {
   grid-template-columns: repeat(5, 1fr);
   scroll-margin-top: 85px;
   width: 90%;
-  background-color: #07c2e8;
+  background-color: #0e7190;
   margin: auto;
   margin-top: 0.5rem;
 }
@@ -696,8 +697,10 @@ article > p {
 }
 
 .seccionMarcas {
+  position: relative;
   border-radius: 20px;
   text-align: center;
+  padding-bottom: 0.5rem;
   margin: auto;
   width: 80%;
   height: 80%;
